@@ -119,6 +119,32 @@ a {
     color: var(--main-bg-color)
 }
 
+/*footer*/
+footer{
+    background-color:#F2F2F2;
+    width: 1340px;
+    height: 163px;
+    display: flex; 
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+footer h3{
+    font-size:18px;
+    font-weight: 700;
+}
+
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer a{
+    font-size:16px;
+    font-weight: 400; 
+    line-height: 18.78px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
