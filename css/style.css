@@ -1,4 +1,7 @@
 /****** General ***********/
+*{
+    box-shadow: 0 0 0 1px red inset
+}
 
 * {
     font-family: 'Raleway', sans-serif;
@@ -194,8 +197,12 @@ form img {
 
 .filter_bar h3 {
     font-size: 18px;
-    height: 21px;
+    /*height: 21px;*/
     padding-right: 15px;
+}
+
+.filter-btn-container {
+    display: flex;
 }
 
 .filter-btn {
@@ -284,8 +291,6 @@ form img {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-right: 30px;
     margin-bottom: 30px;
   }
 
@@ -518,6 +523,7 @@ footer a {
         padding: 0 20px;
         box-sizing: border-box;
     }
+
    /****** Header mobile***********/
    header {
         flex-direction: column;
@@ -529,7 +535,7 @@ footer a {
         justify-content: center;
    }
 
-   nav {
+   /*nav {
         align-items: flex-start;
         width: 100%;
    }
@@ -547,7 +553,7 @@ footer a {
         border-bottom: 2px solid #0065FC; 
         padding-bottom: 15px;
         color: #0065FC;
-    }
+    }*/
 
     /****** Info-Group mobile***********/
     .info_group{
@@ -583,11 +589,11 @@ footer a {
         flex-shrink: 0;
     }
 
-    .filter_bar{
+    /*.filter_bar{
         align-items: flex-start;
         flex-direction: column;
         margin-bottom: 35px;
-    }
+    }*/
 
     .filter_bar h3 {
         padding: 0px;
@@ -648,8 +654,10 @@ footer a {
     .hebergements {
         padding-top: 20px;
         padding-bottom: 20px;
-        color: inherit;
-        background-color: #FFF;
+    }
+
+    section.hebergements {
+        background-color: transparent;
     }
 
     .hebergements-cards {
@@ -668,7 +676,7 @@ footer a {
 
     /****** Activités mobile***********/
     .element_activites {
-        padding: 0px;
+        /*padding: 0px;*/
         height: unset;
     }
 
@@ -680,10 +688,12 @@ footer a {
 
     /****** Footer mobile***********/
     footer {
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        width: 100%;
+        /*display: flex;
+        flex-wrap: wrap;
+        width: 100%;*/
+        margin-left: -20px;
+        margin-right: -20px;
     }
 
 }
