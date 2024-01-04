@@ -401,8 +401,9 @@ form img {
     flex: 1;
     height: 439px;
     padding-top: 0px;
-    padding-left: 0px
+    padding-left: 0px;
     padding-right: 0px;
+    margin-bottom: 0px;
 }
 
 .activites-card img {
@@ -513,12 +514,23 @@ footer a {
     
     .activites-card .card{
         height: 270px;
+        justify-content: unset;
     }
     
     .activites-card img {
-        height: 200px;
+        height: 212px;
         object-fit: cover;
     }
+
+    .activites-card .card-content {
+        padding: 20px 19px;
+
+    }
+    .activites-card .card-title {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
 }
 
 
