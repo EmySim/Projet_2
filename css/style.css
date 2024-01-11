@@ -281,9 +281,10 @@ form img {
 
 .hebergements-cards {
     display: flex;
-    margin-top: 30px;
+    margin: 30px 0px;
     flex-wrap: wrap; 
     justify-content: space-between;
+    row-gap: 30px;
   }
 
 .hebergements-cards a{
@@ -293,7 +294,6 @@ form img {
 .hebergements-cards .card {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
   }
 
   .hebergements-cards img{
@@ -309,7 +309,7 @@ form img {
   }
 
   .hebergements-cards h3{
-    margin-top: 4px;
+    margin-top: 0px;
     margin-bottom: 8px;
   }
   
@@ -408,7 +408,6 @@ form img {
     height: 439px;
     padding: 0px;
     box-sizing: border-box;
-    
 }
 
 .activites-card img {
@@ -418,12 +417,13 @@ form img {
 }
 
 .activites-card .card-content  {
-    padding: 20px 19px;
+    padding-top: 20px;
+    padding-left: 19px;
 }
 
-.card-txt .card-title {
-    margin: 0px;
-}
+    .card-txt .card-title {
+   margin: 0px;
+    }
 
 /****** Footer ***********/
 footer {
@@ -541,10 +541,7 @@ footer a {
 
     .activites-card .card-content {
         display: flex;
-        padding: 7.4% 19px;
-
-        /*padding: 20px 19px;*/
-
+        padding-bottom: 14px;
     }
 
     .activites-card .card-txt {
@@ -558,6 +555,40 @@ footer a {
     
 }
 
+    /* intermediate pad*/
+    @media (min-width: 1025px) and (max-width: 1274px) {
+        .hebergements-cards .card {
+            height: 260px;
+            flex-direction: column;
+        }
+    
+        .activites-card .card-content {
+            padding-top: 12px;
+            padding-bottom: 2px;
+        }
+    }
+
+@media (min-width: 768px) and (max-width: 864px) {
+    .hebergements-cards .card {
+        display: flex;
+        flex-direction: column;
+        height: 249px;
+        justify-content: space-between;
+      }
+
+    .hebergements-card .card-rating {
+        margin-bottom: 0px;
+    }
+      
+      /*.card-txt .card-title {
+      margin: 3px;
+        }*/
+
+    .activites-card .card-content {
+        padding-top: 12px;
+        padding-bottom: 2px;
+    }
+}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
